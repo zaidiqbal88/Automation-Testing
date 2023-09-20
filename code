@@ -1,0 +1,36 @@
+ 1) Test Successful Login with Valid Credentials:
+describe('Login Page', () => {
+  it('should allow a user to log in with valid credentials', () => {
+    // Perform login with valid credentials
+    // For example, fill in username and password fields, and click the login button
+    // You should use your specific testing framework and WebDriver commands here
+    
+    // Assert that the user is redirected to the dashboard
+    // You might need to check the current URL or some element on the dashboard page
+    // For example, using WebDriver's .getCurrentUrl() or .getText() methods
+    
+    // Example using Chai assertion library
+    expect(currentUrl).to.equal('dashboard-url');
+  });
+});
+2) Test Unsuccessful Login Attempts with Invalid Credentials:
+describe('Login Page', () => {
+  it('should show an error message for unsuccessful login attempts with invalid credentials', () => {
+    // Perform login with invalid credentials
+    // For example, fill in username and password fields with incorrect data and click the login button
+    
+    // Assert that an error message is displayed on the login page
+    // You can use WebDriver to locate the error message element
+    
+    // Example using Chai assertion library
+    expect(errorMessageElement.getText()).to.equal('Invalid username or password');
+  });
+});
+
+3) Validate that Appropriate Error Messages are Displayed for Invalid Login Attempts:
+
+This test is essentially an extension of the second test case, where you're checking for specific error messages.
+
+4) On Successful Login, Validate that the User is Redirected to the Dashboard Screen:
+
+This is also included in the first test case. After performing a successful login, we should assert that the user is redirected to the dashboard by checking the current URL or some element on the dashboard page.
